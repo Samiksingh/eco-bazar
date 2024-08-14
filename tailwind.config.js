@@ -1,4 +1,4 @@
-const { Poppins } = require('next/font/google');
+const { Poppins } = require("next/font/google");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -10,10 +10,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'banner-image': "url('/banner.svg')",
-        'sale': "url('/saleofthemonth.svg')",
-        'freshfruit': "url('/freshfruit.svg')",
-        'lowfatmeal': "url('/lowfatmeal.svg')",
+        "banner-image": "url('/banner.svg')",
+        sale: "url('/saleofthemonth.svg')",
+        freshfruit: "url('/freshfruit.svg')",
+        lowfatmeal: "url('/lowfatmeal.svg')",
+        summersale: "url('/Summersale.svg')",
+        hotdeals: "url('/Hotdeals.svg')",
       },
       fontSize: {
         d1: ["4.5rem", "5.4rem"],
@@ -36,7 +38,6 @@ module.exports = {
         medium: 500,
         "semi-bold": 600,
         bold: 700,
-        
       },
       colors: {
         "success-bright": "#84D187",

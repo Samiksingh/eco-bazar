@@ -73,9 +73,9 @@ const Category = () => {
   return (
     <div className="py-8">
       <p className="text-center text-success text-body-small">CATEGORY</p>
-      <h2 className="text-center text-2xl font-semibold mb-6">
+      <h1 className="text-center text-2xl font-semibold mb-6">
         Shop by Top Categories
-      </h2>
+      </h1>
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
         {categoryItems.map((category) => (
           <div

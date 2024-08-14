@@ -16,7 +16,7 @@ import Slider from "./slider";
 import Feature from "./feature";
 import Deal from "./bestDeal";
 import Category from "../categories/[sub-categories]/page";
-
+import FeatureProduct from "../categories/[sub-categories]/featureProduct";
 const categoryItems = [
   {
     id: 1,
@@ -106,6 +106,9 @@ const Banner = () => {
       </div>
       <div className="col-span-full ">
         <Category />
+      </div>
+      <div className="col-span-full">
+      <FeatureProduct />
       </div>
     </section>
   );
