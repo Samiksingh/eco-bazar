@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import ProductItems from "../[sub-categories]/productItems";
 import DealsItems from "../[sub-categories]/dealsItems";
+import TopRatedItems from "../[sub-categories]/topRatedItems";
+import BestSellersItems from "../[sub-categories]/bestSellersItems";
 
 import {
   cabbageIcon,
@@ -51,72 +53,6 @@ const productItems = [
   },
 ];
 
-const dealsItems = [
-  {
-    id: 1,
-    name: "Green Apple",
-    price: "$14.99",
-    image: eggplantIcon,
-  },
-  {
-    id: 2,
-    name: "Indian Malta",
-    price: "$14.99",
-    image: eggplantIcon,
-  },
-  {
-    id: 3,
-    name: "Green Lettuce",
-    price: "$14.99",
-    image: eggplantIcon,
-  },
-];
-
-const bestSellersItems = [
-  {
-    id: 1,
-    name: "Eggplant",
-    price: "$14.99",
-    image: eggplantIcon,
-  },
-  {
-    id: 2,
-    name: "Red Capsicum",
-    price: "$14.99",
-    oldPrice: "$20.99",
-
-    image: eggplantIcon,
-  },
-  {
-    id: 3,
-    name: "Red Tomatoes",
-    price: "$14.99",
-    image: eggplantIcon,
-  },
-];
-
-const topRatedItems = [
-  {
-    id: 1,
-    name: "Big Potatoes",
-    price: "$14.99",
-    image: eggplantIcon,
-  },
-  {
-    id: 2,
-    name: "Corn",
-    price: "$14.99",
-    oldPrice: "$20.99",
-    image: eggplantIcon,
-  },
-  {
-    id: 3,
-    name: "Fresh Cauliflower",
-    price: "$14.99",
-    image: eggplantIcon,
-  },
-];
-
 const FeaturedProducts = () => {
   return (
     <>
@@ -162,23 +98,19 @@ const FeaturedProducts = () => {
           ))}
         </div>
       </div>
+      <div className="grid grid-cols-9">
+        <div>
+          <DealsItems />
+        </div>
+        <div>
+          <TopRatedItems />
+        </div>
+        <div>
+          <BestSellersItems />
+        </div>
+      </div>
     </>
   );
 };
 
 export default FeaturedProducts;
-
-const DealsProduct = () => {
-  return (
-    <>
-      <div>
-        <p>Hot Deals</p>
-      </div>
-      <div>
-        {dealsItems.map((deals) => (
-          <DealsItems />
-        ))}
-      </div>
-    </>
-  );
-};

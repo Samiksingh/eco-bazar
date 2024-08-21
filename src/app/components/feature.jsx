@@ -40,7 +40,7 @@ const features = () => {
   return (
     <section className={`border-b-2 mb-4`}>
       <div className="flex justify-between items-center">
-        {featureItems.map((features, index) => (
+        {featureItems.map((features,index ) => (
           <div
             key={index}
             className={`flex flex-row items-center py-3 ${
