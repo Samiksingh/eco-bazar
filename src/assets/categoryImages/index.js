@@ -4,7 +4,6 @@ import cabbageIcon from "./ChaniseCabbage.svg";
 import lettuceIcon from "./GreenLettuce.svg";
 import eggplantIcon from "./Eggplant.svg";
 import cartIcon from "./AddToCart.svg";
-import colorcartIcon from "./AddToCartColor.svg";
 import wishlistIcon from "./AddTowishlist.svg";
 import viewIcon from "./QuickView.svg";
 
@@ -15,7 +14,7 @@ export {
   lettuceIcon,
   eggplantIcon,
   cartIcon,
-  colorcartIcon,
+  
   wishlistIcon,
   viewIcon,
  
