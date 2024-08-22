@@ -5,17 +5,7 @@ import DealsItems from "../[sub-categories]/dealsItems";
 import TopRatedItems from "../[sub-categories]/topRatedItems";
 import BestSellersItems from "../[sub-categories]/bestSellersItems";
 
-import {
-  cabbageIcon,
-  lettuceIcon,
-  eggplantIcon,
-  cartIcon,
-  colorcartIcon,
-  wishlistIcon,
-  viewIcon,
-  summerSaleIcon,
-  hotdealsIcon,
-} from "../../../assets/categoryImages";
+import { cabbageIcon, lettuceIcon } from "../../../assets/categoryImages";
 import { whitebuttonIcon } from "../../../assets/icons";
 
 const productItems = [
@@ -23,33 +13,25 @@ const productItems = [
     id: 1,
     name: "Chanise Cabbage",
     price: "$14.99",
-    icon: cabbageIcon,
-    image: cartIcon,
-    activeIcon: colorcartIcon,
+    image: cabbageIcon,
   },
   {
     id: 2,
     name: "Green Lettuce",
     price: "$14.99",
-    icon: lettuceIcon,
-    image: cartIcon,
-    activeIcon: colorcartIcon,
+    image: lettuceIcon,
   },
   {
     id: 3,
     name: "Green Chili",
     price: "$14.99",
-    icon: cabbageIcon,
-    image: cartIcon,
-    activeIcon: colorcartIcon,
+    image: cabbageIcon,
   },
   {
     id: 4,
     name: "Corn",
     price: "$14.99",
-    icon: lettuceIcon,
-    image: cartIcon,
-    activeIcon: colorcartIcon,
+    image: lettuceIcon,
   },
 ];
 
@@ -91,9 +73,7 @@ const FeaturedProducts = () => {
               key={product.id}
               name={product.name}
               image={product.image}
-              icon={product.icon}
               price={product.price}
-              activeIcon={product.activeIcon}
             />
           ))}
         </div>

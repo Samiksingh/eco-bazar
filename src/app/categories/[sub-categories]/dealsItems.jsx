@@ -1,15 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import {
-  eggplantIcon,
-  cartIcon,
-  colorcartIcon,
-  wishlistIcon,
-  viewIcon,
-  summerSaleIcon,
-  hotdealsIcon,
-} from "../../../assets/categoryImages";
+import { eggplantIcon } from "../../../assets/categoryImages";
 
 const dealsItems = [
   {

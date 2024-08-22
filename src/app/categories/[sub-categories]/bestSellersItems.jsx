@@ -1,16 +1,6 @@
-import React from 'react'
-import Image from 'next/image'
-import {
-  cabbageIcon,
-  lettuceIcon,
-  eggplantIcon,
-  cartIcon,
-  colorcartIcon,
-  wishlistIcon,
-  viewIcon,
-  summerSaleIcon,
-  hotdealsIcon,
-} from "../../../assets/categoryImages";
+import React from "react";
+import Image from "next/image";
+import { eggplantIcon } from "../../../assets/categoryImages";
 
 const bestSellersItems = [
   {
@@ -35,10 +25,8 @@ const bestSellersItems = [
   },
 ];
 
- const BestSellersItems = () => {
-  return (
-    <div>BestSellersItems</div>
-  )
-}
+const BestSellersItems = () => {
+  return <div>BestSellersItems</div>;
+};
 
-export default BestSellersItems
+export default BestSellersItems;

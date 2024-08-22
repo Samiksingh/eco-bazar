@@ -38,7 +38,6 @@ function Deals() {
           <p className="text-sm  text-black">
             Up to
             <span className=" text-yellow-400 bg-black  px-2 py-1 rounded-md ">
-              
               64% OFF
             </span>
           </p>
