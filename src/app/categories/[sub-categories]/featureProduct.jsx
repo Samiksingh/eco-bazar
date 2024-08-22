@@ -45,12 +45,9 @@ const FeaturedProducts = () => {
         </h1>
       </div>
       <div className="flex-wrap justify-between">
-        <div className="grid grid-cols-5">
+        <div className="grid grid-cols-5 gap-4">
           <div className="md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
-            {/* <div
-            className={`md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8  border border-grey-100 rounded-lg hover:shadow-lg transition-shadow ${" hover:border-success"}`}
-          > */}
-            <div className="col-span-1 lg:col-span-2 bg-summersale p-4 rounded-lg flex flex-col justify-center items-center text-center h-80 w-60">
+            <div className="col-span-1 lg:col-span-2 bg-summersale p-4 rounded-lg flex flex-col justify-center items-center   text-center h-80 w-60">
               <span className="mb-36">
                 <p className="text-green-600 font-bold text-4xl">75% off</p>
                 <p className="text-lg">Summer Sale</p>
@@ -78,15 +75,32 @@ const FeaturedProducts = () => {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-9">
+      <div className="grid grid-cols-4 gap-24">
         <div>
           <DealsItems />
+        </div>
+        <div>
+          <BestSellersItems />
         </div>
         <div>
           <TopRatedItems />
         </div>
         <div>
-          <BestSellersItems />
+          <div className="bg-freshfruit bg-cover p-4 rounded-lg flex flex-col justify-center items-center text-center ">
+            <span className="mb-36">
+              <p className="text-lg">Hot Sale</p>
+              <p className="text-black font-bold text-4xl">
+                Save 37% <span className="font-normal">on Every Order</span>
+              </p>
+
+              <div className="mt-5 flex justify-center">
+                <button className="cursor-pointer bg-white text-success px-4 py-3 rounded-full flex items-center">
+                  Shop Now
+                  <Image src={whitebuttonIcon} alt="button" className="ml-4" />
+                </button>
+              </div>
+            </span>
+          </div>
         </div>
       </div>
     </>

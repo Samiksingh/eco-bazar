@@ -3,9 +3,9 @@ import React from "react";
 
 const ProductItems = (props) => {
   return (
-    <div className="">
+    <div>
       <div
-        className={`group ml-5 border relative  border-grey-100 p-4 rounded-lg hover:shadow-lg transition-shadow ${" hover:border-success"}`}
+        className={`group border relative  border-grey-100 p-4 rounded-lg hover:shadow-lg transition-shadow ${" hover:border-success-dark"}`}
       >
         <Image src={(props.activeIcon, props.image)} alt="icon" />
         <div className="absolute top-5 right-5 flex flex-col opacity-0 group-hover:opacity-100 ">
@@ -17,8 +17,8 @@ const ProductItems = (props) => {
             <h1>{props.name}</h1>
             <p>{props.price}</p>
           </div>
-          {/* <button className="opacity-0 group-hover:opacity-100 h-12 w-12 mt-4 border rounded-full bg-grey-100 transition ease-in-out duration-300  hover:bg-success"> */}
-          <div className="">
+
+          <div>
             <button className="h-12 w-12 mt-4 border rounded-full transition ease-in-out duration-300 bg-addToCartdefault bg-cover hover:bg-addToCartHover"></button>
           </div>
         </div>
