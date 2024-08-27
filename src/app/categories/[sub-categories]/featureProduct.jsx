@@ -4,6 +4,9 @@ import ProductItems from "../[sub-categories]/productItems";
 import DealsItems from "../[sub-categories]/dealsItems";
 import TopRatedItems from "../[sub-categories]/topRatedItems";
 import BestSellersItems from "../[sub-categories]/bestSellersItems";
+import VideoItems from "../../video/video";
+import TeamSection from "../../team/team";
+import TestimonialDetails from "../../testimonial/testimonial";
 
 import { cabbageIcon, lettuceIcon } from "../../../assets/categoryImages";
 import { whitebuttonIcon } from "../../../assets/icons";
@@ -85,8 +88,9 @@ const FeaturedProducts = () => {
         <div>
           <TopRatedItems />
         </div>
+
         <div>
-          <div className="bg-freshfruit bg-cover p-4 rounded-lg flex flex-col justify-center items-center text-center ">
+          <div className="bg-freshfruit bg-cover p-4 rounded-lg flex  justify-center items-center text-center ">
             <span className="mb-36">
               <p className="text-lg">Hot Sale</p>
               <p className="text-black font-bold text-4xl">
@@ -102,6 +106,15 @@ const FeaturedProducts = () => {
             </span>
           </div>
         </div>
+      </div>
+      <div className="mt-44">
+        <VideoItems />
+      </div>
+      <div className="mt-10 col-span-full">
+        <TeamSection />
+      </div>
+      <div className="col-span-full mt-10">
+        <TestimonialDetails />
       </div>
     </>
   );

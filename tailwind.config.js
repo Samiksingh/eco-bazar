@@ -24,6 +24,13 @@ module.exports = {
         clickwishlist: "url('/clickwishlist.svg')",
         quickviewdefault: "url('/QuickView.svg')",
         quickviewhover: "url('/eye.svg')",
+        video: "url('/video.svg')",
+        facebookdefault: "url('/facebookDefault.svg')",
+        facebookhover: "url('/facebookHover.svg')",
+        instagramdefault: "url('/instagramDefault.svg')",
+        instagramhover: "url('/instagramHover.svg')",
+        twitterdefault: "url('/twitterDefault.svg')",
+        twitterhover: "url('/twitterHover.svg')",
       },
       fontSize: {
         d1: ["4.5rem", "5.4rem"],

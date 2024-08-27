@@ -31,7 +31,7 @@ const BestSellersItems = () => {
       <div>
         <p>Best Seller</p>
       </div>
-      <div className=" w-80 h-28 pt-6">
+      <div className=" w-80 h-28 pt-6 pb-6">
         {bestSellersItems.map((best) => (
           <div
             key={best.id}

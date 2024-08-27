@@ -26,11 +26,11 @@ const topRatedItems = [
 
 const TopRatedItems = () => {
   return (
-    <div >
-      <div >
+    <div>
+      <div>
         <p>Top Rated</p>
       </div>
-      <div className=" w-80 h-28 pt-6">
+      <div className=" w-80 h-28 pt-6 pb-6">
         {topRatedItems.map((top) => (
           <div
             key={top.id}
@@ -46,7 +46,8 @@ const TopRatedItems = () => {
               <div>
                 <h1 className="group-hover:text-success-dark">{top.name}</h1>
                 <p className="group-hover:opacity-0">
-                  {top.price} <span className="text-grey-400">{top.oldPrice}</span>
+                  {top.price}{" "}
+                  <span className="text-grey-400">{top.oldPrice}</span>
                 </p>
               </div>
             </div>

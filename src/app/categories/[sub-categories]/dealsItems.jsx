@@ -30,7 +30,7 @@ const DealsItems = () => {
       <div>
         <p>Hot Deals</p>
       </div>
-      <div className="w-80 h-28 pt-6">
+      <div className="w-80 h-28 pt-6 pb-6">
         {dealsItems.map((deals) => (
           <div
             key={deals.id}
