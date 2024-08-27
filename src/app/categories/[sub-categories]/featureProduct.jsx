@@ -7,6 +7,7 @@ import BestSellersItems from "../[sub-categories]/bestSellersItems";
 import VideoItems from "../../video/video";
 import TeamSection from "../../team/team";
 import TestimonialDetails from "../../testimonial/testimonial";
+import Brandlogo from "../../brandlogo/brandlogo";
 
 import { cabbageIcon, lettuceIcon } from "../../../assets/categoryImages";
 import { whitebuttonIcon } from "../../../assets/icons";
@@ -115,6 +116,9 @@ const FeaturedProducts = () => {
       </div>
       <div className="col-span-full mt-10">
         <TestimonialDetails />
+      </div>
+      <div className="mt-10 col-span-full">
+        <Brandlogo />
       </div>
     </>
   );
