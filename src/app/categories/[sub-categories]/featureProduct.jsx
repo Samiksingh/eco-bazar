@@ -94,13 +94,16 @@ const FeaturedProducts = () => {
         <div>
           <div className="bg-freshfruit bg-cover p-4 rounded-lg flex  justify-center items-center text-center ">
             <span className="mb-36">
-              <p className="text-lg">Hot Sale</p>
-              <p className="text-black font-bold text-4xl">
-                Save 37% <span className="font-normal">on Every Order</span>
+              <p className="text-grey-900 text-body-tiny font-medium">
+                Hot Sale
+              </p>
+              <p className="text-grey-900 text-h5">
+                <span className="font-bold text-4xl">Save 37%</span>
+                <span className="font-normal">on Every Order</span>
               </p>
 
               <div className="mt-5 flex justify-center">
-                <button className="cursor-pointer bg-white text-success px-4 py-3 rounded-full flex items-center">
+                <button className="cursor-pointer text-success bg-white text-body-small flex items-center px-4 py-2 rounded-full font-semi-bold">
                   Shop Now
                   <Image src={whitebuttonIcon} alt="button" className="ml-4" />
                 </button>

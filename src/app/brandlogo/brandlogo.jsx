@@ -13,8 +13,7 @@ const Brandlogo = () => {
   return (
     <>
       <div className="flex justify-between border p-14">
-        <Image src={stepsIcon} alt="food"/>
-
+        <Image src={stepsIcon} alt="food" />
         <Image src={mangoIcon} alt="food" />
         <Image src={foodnetworkIcon} alt="food" />
         <Image src={foodIcon} alt="food" />

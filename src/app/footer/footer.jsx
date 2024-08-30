@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <>
       <section>
-        <div className="bg-black flex px-16 py-20 items-center justify-between">
+        <div className="bg-black  flex px-16 py-20 items-center justify-between">
           <div className="flex items-center">
             <Image src={envolopeIcon} alt="mail" className="mr-2" />
             <span>
@@ -78,10 +78,10 @@ const Footer = () => {
             </p>
             <ul className="text-grey-600">
               <li className="text-body-small font-medium mt-4">
-                <Link href="/">My Account</Link>
+                <Link href="/signIn">My Account</Link>
               </li>
               <li className="text-body-small font-medium mt-4">
-                <Link href="/about">Order History</Link>
+                <Link href="/">Order History</Link>
               </li>
               <li className="text-body-small font-medium mt-4">
                 <Link href="/">Shopping Cart</Link>
@@ -98,7 +98,7 @@ const Footer = () => {
                 <Link href="/">Contact</Link>
               </li>
               <li className="text-body-small font-medium mt-4">
-                <Link href="/about">FAQs</Link>
+                <Link href="/">FAQs</Link>
               </li>
               <li className="text-body-small font-medium mt-4">
                 <Link href="/">Terms & Condition</Link>
@@ -112,10 +112,10 @@ const Footer = () => {
             <p className="text-grey-900 text-body-medium font-medium">Proxy</p>
             <ul className="text-grey-600">
               <li className="text-body-small font-medium mt-4">
-                <Link href="/">About</Link>
+                <Link href="/about">About</Link>
               </li>
               <li className="text-body-small font-medium mt-4">
-                <Link href="/about">Shop</Link>
+                <Link href="/">Shop</Link>
               </li>
               <li className="text-body-small font-medium mt-4">
                 <Link href="/">Product</Link>
