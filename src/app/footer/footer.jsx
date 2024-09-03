@@ -112,7 +112,7 @@ const Footer = () => {
             <p className="text-grey-900 text-body-medium font-medium">Proxy</p>
             <ul className="text-grey-600">
               <li className="text-body-small font-medium mt-4">
-                <Link href="/about">About</Link>
+                <Link href="/about-us">About</Link>
               </li>
               <li className="text-body-small font-medium mt-4">
                 <Link href="/">Shop</Link>

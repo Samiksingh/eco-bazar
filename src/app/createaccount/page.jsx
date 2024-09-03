@@ -66,7 +66,7 @@ export default function CreateAccountForm() {
 
   return (
     <>
-      <div className="">
+      <div>
         <Header />
       </div>
       <div className=" bg-background bg-cover px-28 py-12 ">
