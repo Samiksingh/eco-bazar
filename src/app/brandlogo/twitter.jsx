@@ -6,7 +6,7 @@ const Twitter = () => {
   const [imageSrc, setImageSrc] = useState("/brandlogo/twitterHover.svg");
 
   return (
-    <button className="mr-2">
+    <a className="mr-2" href="https://x.com/">
       <Image
         src={imageSrc}
         onMouseOver={() => setImageSrc("/brandlogo/twitterDefault.svg")}
@@ -15,7 +15,7 @@ const Twitter = () => {
         width={50}
         height={50}
       />
-    </button>
+    </a>
   );
 };
 

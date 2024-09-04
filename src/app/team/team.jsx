@@ -45,7 +45,7 @@ const TeamSection = () => {
               alt="imgUrl"
               className="w-[19.5rem] h-[17.5rem] brightness-100 group-hover:brightness-50"
             />
-            <div className="opacity-0 absolute group-hover:opacity-100 top-1/3 right-8">
+            <div className="opacity-0 absolute group-hover:opacity-100 top-1/3 right-8 flex">
               <Facebook />
               <Instagram/>
               <Pinterest/>

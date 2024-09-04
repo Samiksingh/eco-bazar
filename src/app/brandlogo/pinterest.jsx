@@ -6,7 +6,7 @@ const Pinterest = () => {
   const [imageSrc, setImageSrc] = useState("/brandlogo/pinterestHover.svg");
 
   return (
-    <button className="mr-2">
+    <a className="mr-2" href="https://www.pinterest.com/">
       <Image
         src={imageSrc}
         onMouseOver={() => setImageSrc("/brandlogo/pinterestDefault.svg")}
@@ -15,7 +15,7 @@ const Pinterest = () => {
         width={50}
         height={50}
       />
-    </button>
+    </a>
   );
 };
 

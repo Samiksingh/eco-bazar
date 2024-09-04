@@ -6,7 +6,7 @@ const Instagram = () => {
   const [imageSrc, setImageSrc] = useState("/brandlogo/instagramHover.svg");
 
   return (
-    <button className="mr-2">
+    <a className="mr-2" href="https://www.instagram.com/">
       <Image
         src={imageSrc}
         onMouseOver={() => setImageSrc("/brandlogo/instagramDefault.svg")}
@@ -15,7 +15,7 @@ const Instagram = () => {
         width={50}
         height={50}
       />
-    </button>
+    </a>
   );
 };
 

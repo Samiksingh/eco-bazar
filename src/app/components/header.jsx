@@ -16,7 +16,6 @@ import Link from "next/link";
 export default function Header() {
   return (
     <>
-    
       <header className="mx-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 my-4">
           <div className="flex">
@@ -115,7 +114,7 @@ export default function Header() {
                   <NavLink title="Shop" />
                   <NavLink title="Pages" />
                   <NavLink title="Blogs" />
-                  <NavLink title="About Us" hideIcon />
+                  <NavLink title="About Us" hideIcon href="about-us" />
                   <NavLink title="Contact Us" hideIcon />
                 </div>
               </div>
