@@ -7,6 +7,8 @@ import Link from "next/link";
 import Header from "../components/header";
 import Footer from "../footer/footer";
 import { homeIcon } from "@/assets/signinImages";
+import {backgroundIcon} from "../../assets/brandlogoImages"
+
 const Page = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -51,13 +53,16 @@ const Page = () => {
       <Link href="/contact" />
       <div>
         <Header />
+        <Link href="/">
+          <Image
+            src={backgroundIcon}
+            alt="home"
+            className="px-10 "
+          />
+        </Link>
       </div>
       <section>
-        <div className=" bg-background bg-cover px-28 py-12 ">
-          <Link href="/">
-            <Image src={homeIcon} alt="home" />
-          </Link>
-        </div>
+        
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
           <div className="bg-white p-6 rounded shadow-md w-full max-w-sm">
             <h2 className="text-2xl font-bold mb-6 text-center">Sign In</h2>

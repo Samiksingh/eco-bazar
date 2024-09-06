@@ -17,6 +17,7 @@ import {
 } from "../../assets/aboutImages";
 import { homeIcon } from "@/assets/signinImages";
 import { buttonIcon } from "../../assets/icons";
+import { backgroundIcon } from "@/assets/brandlogoImages";
 
 import TeamSection from "../team/team";
 import TestimonialDetails from "../testimonial/testimonial";
@@ -67,13 +68,11 @@ const page = () => {
     <>
       <div>
         <Header />
+        <Link href="/">
+          <Image src={backgroundIcon} alt="home" className="px-10 " />
+        </Link>
       </div>
       <section>
-        <div className=" bg-background bg-cover px-28 py-12 ">
-          <Link href="/">
-            <Image src={homeIcon} alt="home" />
-          </Link>
-        </div>
         <div className="flex mt-10 ">
           <h1 className="">100% Trusted Organic Food Store</h1>
           <p>

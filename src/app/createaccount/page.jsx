@@ -5,6 +5,7 @@ import Header from "../components/header";
 import Footer from "../footer/footer";
 import Image from "next/image";
 import { homeIcon } from "@/assets/signinImages";
+import { backgroundIcon } from "@/assets/brandlogoImages";
 
 export default function CreateAccountForm() {
   const [email, setEmail] = useState("");
@@ -68,10 +69,8 @@ export default function CreateAccountForm() {
     <>
       <div>
         <Header />
-      </div>
-      <div className=" bg-background bg-cover px-28 py-12 ">
         <Link href="/">
-          <Image src={homeIcon} alt="home" />
+          <Image src={backgroundIcon} alt="home" className="px-10" />
         </Link>
       </div>
       <div className="min-h-screen flex items-center justify-center bg-gray-100">

@@ -4,6 +4,7 @@ import gseriesIcon from "./Gseries.svg";
 import bookoffIcon from "./bookoff.svg";
 import mangoIcon from "./mango.svg";
 import stepsIcon from "./Vector.svg";
+import backgroundIcon from "./Breadcrumbs.svg";
 
 export {
   foodIcon,
@@ -12,4 +13,5 @@ export {
   bookoffIcon,
   mangoIcon,
   stepsIcon,
+  backgroundIcon,
 };
