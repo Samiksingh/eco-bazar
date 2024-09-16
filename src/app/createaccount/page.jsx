@@ -1,8 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import Header from "../components/header";
-import Footer from "../footer/footer";
+
 import Image from "next/image";
 import { homeIcon } from "@/assets/signinImages";
 import { backgroundIcon } from "@/assets/brandlogoImages";
@@ -68,7 +67,7 @@ export default function CreateAccountForm() {
   return (
     <>
       <div>
-        <Header />
+        
         <Link href="/">
           <Image src={backgroundIcon} alt="home" className="px-10" />
         </Link>
@@ -188,9 +187,7 @@ export default function CreateAccountForm() {
           </div>
         </div>
       </div>
-      <div>
-        <Footer />
-      </div>
+      
     </>
   );
 }

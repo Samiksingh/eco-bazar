@@ -1,12 +1,11 @@
-/* eslint-disable react/no-unescaped-entities */
+
 "use client";
 import React from "react";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Header from "../components/header";
-import Footer from "../footer/footer";
-import { homeIcon } from "@/assets/signinImages";
+
+
 import {backgroundIcon} from "../../assets/brandlogoImages"
 
 const Page = () => {
@@ -52,7 +51,7 @@ const Page = () => {
     <>
       <Link href="/contact" />
       <div>
-        <Header />
+        
         <Link href="/">
           <Image
             src={backgroundIcon}
@@ -152,9 +151,7 @@ const Page = () => {
           </div>
         </div>
       </section>
-      <div>
-        <Footer />
-      </div>
+     
     </>
   );
 };

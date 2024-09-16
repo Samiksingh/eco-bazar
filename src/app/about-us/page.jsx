@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Header from "../components/header";
-import Footer from "../footer/footer";
+
 import Link from "next/link";
 import {
   topIcon,
@@ -67,7 +66,6 @@ const page = () => {
   return (
     <>
       <div>
-        <Header />
         <Link href="/">
           <Image src={backgroundIcon} alt="home" className="px-10 " />
         </Link>
@@ -140,9 +138,7 @@ const page = () => {
       <div className="mt-10">
         <Brandlogo />
       </div>
-      <div className="mt-10">
-        <Footer />
-      </div>
+      
     </>
   );
 };

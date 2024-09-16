@@ -111,7 +111,7 @@ export default function Header() {
               <div className="col-span-12 lg:col-span-8 flex items-center justify-center lg:justify-start">
                 <div className="grid grid-cols-1 lg:grid-cols-6 ">
                   <NavLink title="Home" active />
-                  <NavLink title="Shop" />
+                  <NavLink title="Shop" href ="categories"/>
                   <NavLink title="Pages" />
                   <NavLink title="Blogs" />
                   <NavLink title="About Us" hideIcon href="about-us" />
