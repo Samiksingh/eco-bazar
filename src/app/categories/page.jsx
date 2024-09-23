@@ -111,13 +111,15 @@ const Product = () => {
       <Link href="/shop" />
 
       <section>
-        <div className="bg-discount bg-cover px-20 py-20 ">
+        <div className="bg-discount bg-cover px-20 py-20">
           <CountdownTimer days={1} hours={2} minutes={60} seconds={30} />
           <button className="bg-success text-white px-4 py-3 rounded-full flex items-center ">
             Shop Now
             <Image src={buttonIcon} alt="button" className=" ml-4 " />
           </button>
-          <div></div>
+          <div>
+            
+          </div>
         </div>
       </section>
     </>

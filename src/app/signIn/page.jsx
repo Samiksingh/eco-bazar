@@ -1,17 +1,17 @@
-
 "use client";
 import React from "react";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { eyeIcon } from "../../assets/icons";
 
-
-import {backgroundIcon} from "../../assets/brandlogoImages"
+import { backgroundIcon } from "../../assets/brandlogoImages";
 
 const Page = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
+  const [visible, setVisible] = useState(true);
 
   const validateForm = () => {
     let formErrors = {};
@@ -51,17 +51,11 @@ const Page = () => {
     <>
       <Link href="/contact" />
       <div>
-        
         <Link href="/">
-          <Image
-            src={backgroundIcon}
-            alt="home"
-            className="px-10 "
-          />
+          <Image src={backgroundIcon} alt="home" className="px-10" />
         </Link>
       </div>
       <section>
-        
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
           <div className="bg-white p-6 rounded shadow-md w-full max-w-sm">
             <h2 className="text-2xl font-bold mb-6 text-center">Sign In</h2>
@@ -94,17 +88,24 @@ const Page = () => {
                 >
                   Password
                 </label>
-                <div className="relative">
+                <div className="relative flex justify-between items-center shadow appearance-none border rounded w-full  px-3 ">
                   <input
-                    className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline bg-quickviewdefault bg-right bg-no-repeat ${
+                    className={`  text-gray-700  leading-tight focus:outline-none focus:shadow-outline ${
                       errors.password ? "border-red-500" : ""
                     }`}
                     id="password"
-                    type="password"
+                    type={visible ? "text" : "password"}
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />
+                  <div className="" onClick={() => setVisible(!visible)}>
+                    {visible ? (
+                      <Image src={eyeIcon} alt="eye" />
+                    ) : (
+                      <Image src={eyeIcon} alt="eyeclosed" />
+                    )}
+                  </div>
                 </div>
                 {errors.password && (
                   <p className="text-red-500 text-xs italic">
@@ -151,7 +152,6 @@ const Page = () => {
           </div>
         </div>
       </section>
-     
     </>
   );
 };

@@ -67,7 +67,7 @@ const page = () => {
     <>
       <div>
         <Link href="/">
-          <Image src={backgroundIcon} alt="home" className="px-10 " />
+          <Image src={backgroundIcon} alt="home" className="px-10" />
         </Link>
       </div>
       <section>

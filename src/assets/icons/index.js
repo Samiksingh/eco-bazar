@@ -22,7 +22,7 @@ import headphoneIcon from "./headphone.svg";
 import paymentIcon from "./payment.svg";
 import moneybackIcon from "./money-back.svg";
 import whitebuttonIcon from "./arrow.svg";
-
+import eyeIcon from "./QuickView.svg";
 export {
   mapIcon,
   dropdownIcon,
@@ -47,5 +47,6 @@ export {
   headphoneIcon,
   paymentIcon,
   moneybackIcon,
-  whitebuttonIcon 
+  whitebuttonIcon,
+  eyeIcon,
 };

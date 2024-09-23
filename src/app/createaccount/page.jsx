@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 import Image from "next/image";
-import { homeIcon } from "@/assets/signinImages";
+import { eyeIcon } from "../../assets/icons";
 import { backgroundIcon } from "@/assets/brandlogoImages";
 
 export default function CreateAccountForm() {
@@ -12,6 +12,7 @@ export default function CreateAccountForm() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [errors, setErrors] = useState({});
+  const [visible, setVisible] = useState(true);
 
   const validateForm = () => {
     let formErrors = {};
@@ -67,7 +68,6 @@ export default function CreateAccountForm() {
   return (
     <>
       <div>
-        
         <Link href="/">
           <Image src={backgroundIcon} alt="home" className="px-10" />
         </Link>
@@ -106,17 +106,24 @@ export default function CreateAccountForm() {
               >
                 Password
               </label>
-              <div className="relative">
+              <div className="relative flex justify-between items-center shadow appearance-none border rounded w-full  px-3 ">
                 <input
-                  className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+                  className={`  text-gray-700  leading-tight focus:outline-none focus:shadow-outline ${
                     errors.password ? "border-red-500" : ""
                   }`}
                   id="password"
-                  type="password"
+                  type={visible ? "text" : "password"}
                   placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
+                <div onClick={() => setVisible(!visible)}>
+                  {visible ? (
+                    <Image src={eyeIcon} alt="eye" />
+                  ) : (
+                    <Image src={eyeIcon} alt="eyeclosed" />
+                  )}
+                </div>
               </div>
               {errors.password && (
                 <p className="text-red-500 text-xs italic">{errors.password}</p>
@@ -129,17 +136,24 @@ export default function CreateAccountForm() {
               >
                 Confirm Password
               </label>
-              <div className="relative">
+              <div className="relative flex justify-between items-center shadow appearance-none border rounded w-full  px-3 ">
                 <input
-                  className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-                    errors.confirmPassword ? "border-red-500" : ""
+                  className={`  text-gray-700  leading-tight focus:outline-none focus:shadow-outline ${
+                    errors.confirmPasswordpassword ? "border-red-500" : ""
                   }`}
                   id="confirmPassword"
-                  type="password"
+                  type={visible ? "text" : "password"}
                   placeholder="Confirm Password"
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                 />
+                <div onClick={() => setVisible(!visible)}>
+                  {visible ? (
+                    <Image src={eyeIcon} alt="eye" />
+                  ) : (
+                    <Image src={eyeIcon} alt="eyeclosed" />
+                  )}
+                </div>
               </div>
               {errors.confirmPassword && (
                 <p className="text-red-500 text-xs italic">
@@ -187,7 +201,6 @@ export default function CreateAccountForm() {
           </div>
         </div>
       </div>
-      
     </>
   );
 }

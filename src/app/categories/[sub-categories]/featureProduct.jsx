@@ -9,7 +9,6 @@ import TeamSection from "../../team/team";
 import TestimonialDetails from "../../testimonial/testimonial";
 import Brandlogo from "../../brandlogo/brandlogo";
 
-
 import { cabbageIcon, lettuceIcon } from "../../../assets/categoryImages";
 import { whitebuttonIcon } from "../../../assets/icons";
 
@@ -112,7 +111,7 @@ const FeaturedProducts = () => {
           </div>
         </div>
       </div>
-      <div className="mt-44">
+      <div className="mt-56">
         <VideoItems />
       </div>
       <div className="mt-10 col-span-full">
@@ -124,7 +123,6 @@ const FeaturedProducts = () => {
       <div className="mt-10 col-span-full">
         <Brandlogo />
       </div>
-     
     </>
   );
 };
