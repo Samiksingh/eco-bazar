@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <>
       <section>
-        <div className="bg-black  flex px-16 py-20 items-center justify-between">
+        <div className="bg-black flex px-16 py-20 items-center justify-between">
           <div className="flex items-center">
             <Image src={envolopeIcon} alt="mail" className="mr-2" />
             <span>

@@ -9,6 +9,7 @@ import TeamSection from "../../team/team";
 import TestimonialDetails from "../../testimonial/testimonial";
 import Brandlogo from "../../brandlogo/brandlogo";
 
+
 import { cabbageIcon, lettuceIcon } from "../../../assets/categoryImages";
 import { whitebuttonIcon } from "../../../assets/icons";
 
@@ -18,24 +19,28 @@ const productItems = [
     name: "Chanise Cabbage",
     price: "$14.99",
     image: cabbageIcon,
+    rating: 4,
   },
   {
     id: 2,
     name: "Green Lettuce",
     price: "$14.99",
     image: lettuceIcon,
+    rating: 4,
   },
   {
     id: 3,
     name: "Green Chili",
     price: "$14.99",
     image: cabbageIcon,
+    rating: 4,
   },
   {
     id: 4,
     name: "Corn",
     price: "$14.99",
     image: lettuceIcon,
+    rating: 4,
   },
 ];
 
@@ -75,7 +80,9 @@ const FeaturedProducts = () => {
               name={product.name}
               image={product.image}
               price={product.price}
+              rating={product.rating}
             />
+            
           ))}
         </div>
       </div>

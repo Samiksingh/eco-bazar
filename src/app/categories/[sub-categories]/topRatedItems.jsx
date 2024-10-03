@@ -8,6 +8,7 @@ const topRatedItems = [
     name: "Big Potatoes",
     price: "$14.99",
     image: eggplantIcon,
+    rating: 4,
   },
   {
     id: 2,
@@ -15,12 +16,14 @@ const topRatedItems = [
     price: "$14.99",
     oldPrice: "$20.99",
     image: eggplantIcon,
+    rating: 4,
   },
   {
     id: 3,
     name: "Fresh Cauliflower",
     price: "$14.99",
     image: eggplantIcon,
+    rating: 4,
   },
 ];
 

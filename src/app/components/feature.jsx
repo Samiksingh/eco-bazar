@@ -11,7 +11,6 @@ import {
 const featureItems = [
   {
     id: 1,
-
     icon: carIcon,
     title: "Free Shipping",
     description: "Free shipping with discount",

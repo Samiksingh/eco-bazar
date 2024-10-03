@@ -1,5 +1,7 @@
+
 import React from "react";
 import Image from "next/image";
+import Stars from "../../components/stars";
 
 import { eggplantIcon } from "../../../assets/categoryImages";
 
@@ -9,18 +11,21 @@ const dealsItems = [
     name: "Green Apple",
     price: "$14.99",
     image: eggplantIcon,
+    rating: 4,
   },
   {
     id: 2,
     name: "Indian Malta",
     price: "$14.99",
     image: eggplantIcon,
+    rating: 4,
   },
   {
     id: 3,
     name: "Green Lettuce",
     price: "$14.99",
     image: eggplantIcon,
+    rating: 4,
   },
 ];
 
@@ -30,7 +35,10 @@ const DealsItems = () => {
       <div>
         <p>Hot Deals</p>
       </div>
-      <div className="w-80 h-28 pt-6 pb-6">
+      <div
+        className="w-80 h-28 pt-6 
+      rating:4,"
+      >
         {dealsItems.map((deals) => (
           <div
             key={deals.id}
@@ -46,6 +54,8 @@ const DealsItems = () => {
               <div>
                 <h1 className="group-hover:text-success-dark">{deals.name}</h1>
                 <p className="group-hover:opacity-0">{deals.price}</p>
+
+                <Stars stars={deals.rating} />
               </div>
             </div>
           </div>

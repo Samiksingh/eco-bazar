@@ -8,6 +8,7 @@ const bestSellersItems = [
     name: "Eggplant",
     price: "$14.99",
     image: eggplantIcon,
+    rating:4,
   },
   {
     id: 2,
@@ -16,12 +17,14 @@ const bestSellersItems = [
     oldPrice: "$20.99",
 
     image: eggplantIcon,
+    rating:4,
   },
   {
     id: 3,
     name: "Red Tomatoes",
     price: "$14.99",
     image: eggplantIcon,
+    rating:4,
   },
 ];
 
@@ -31,7 +34,8 @@ const BestSellersItems = () => {
       <div>
         <p>Best Seller</p>
       </div>
-      <div className=" w-80 h-28 pt-6 pb-6">
+      <div className=" w-80 h-28 pt-6 pb-6
+      rating:4,">
         {bestSellersItems.map((best) => (
           <div
             key={best.id}
