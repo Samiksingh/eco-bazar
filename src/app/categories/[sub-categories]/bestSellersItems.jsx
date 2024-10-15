@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Stars from "../../components/stars";
 import { eggplantIcon } from "../../../assets/categoryImages";
 
 const bestSellersItems = [
@@ -51,7 +52,8 @@ const BestSellersItems = () => {
               <div>
                 <h1 className="group-hover:text-success-dark">{best.name}</h1>
                 <p className="group-hover:opacity-0">
-                  {best.price}{" "}
+                  {best.price}
+                  <Stars stars={best.rating}/>
                   <span className="text-grey-400">{best.oldPrice}</span>
                 </p>
               </div>

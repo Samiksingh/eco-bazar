@@ -93,14 +93,33 @@ const Product = () => {
           </div>
         </div>
         </section> */}
-      <div>
-        {filterItems.map((filter) => (
+      <div className="mt-1">
+        {/* {filterItems.map((filter) => (
           <FilterComponent
             key={filter.id}
-            name={filter.name}
+            name={filter.name} 
             image={filter.image}
           />
-        ))}
+        ))} */}
+        <div className="flex ml-12">
+          <div className="border-2 flex">
+            <button>Select Category</button>
+            <Image src={dropdownIcon} alt="dropdown" />
+          </div>
+          <div className="border-2 flex">
+            <button>Select Price</button>
+            <Image src={dropdownIcon} alt="dropdown" />
+          </div>
+          <div className="border-2 flex">
+            <button>Select Rating</button>
+            <Image src={dropdownIcon} alt="dropdown" />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button> Sort by:</button>
+        <button> Show:</button>
       </div>
 
       <div className="grid grid-cols-4 gap-4 mt-10">
@@ -119,11 +138,11 @@ const Product = () => {
 
 export default Product;
 
-const filterItems = [
-  { name: "Select Category", image: dropdownIcon },
-  { name: "Select Price", image: dropdownIcon },
-  { name: "Select Rating", image: dropdownIcon },
-];
+// const filterItems = [
+//   { name: "Select Category", image: dropdownIcon },
+//   { name: "Select Price", image: dropdownIcon },
+//   { name: "Select Rating", image: dropdownIcon },
+// ];
 
 const FilterComponent = () => {
   return (
